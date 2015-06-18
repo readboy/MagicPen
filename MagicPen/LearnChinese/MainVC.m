@@ -48,13 +48,15 @@
 }
 
 - (IBAction)onClickHanZi:(id)sender {
-    
+    NSLog(@"onClickHanZi");
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"LearnChinese" bundle:nil];
     UIViewController *drawingController = [storyboard instantiateViewControllerWithIdentifier:@"LearnChineseMainID"];
     
     [self presentViewController:drawingController
                        animated:YES
                      completion:nil];
+    
+   
 }
 
 - (IBAction)onClickKouJue:(id)sender {
