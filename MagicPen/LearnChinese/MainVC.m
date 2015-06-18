@@ -48,7 +48,7 @@
 }
 
 - (IBAction)onClickHanZi:(id)sender {
-    NSLog(@"onClickHanZi");
+    NSLog(@"点击到了巧学汉字");
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"LearnChinese" bundle:nil];
     UIViewController *drawingController = [storyboard instantiateViewControllerWithIdentifier:@"LearnChineseMainID"];
     
@@ -60,7 +60,7 @@
 }
 
 - (IBAction)onClickKouJue:(id)sender {
-    
+    NSLog(@"点击到了算术口诀");
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Arithmetic" bundle:nil];
     UIViewController *drawingController = [storyboard instantiateViewControllerWithIdentifier:@"ArithmeticMainID"];
     
