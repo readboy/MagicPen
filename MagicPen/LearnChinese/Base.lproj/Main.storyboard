@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainbg" translatesAutoresizingMaskIntoConstraints="NO" id="mm1-Tv-2af">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOr-Wc-UQH">
+                                <rect key="frame" x="388" y="154" width="148" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="A2g-bQ-3g8"/>
+                                    <constraint firstAttribute="width" constant="148" id="r4b-Ub-6zn"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="xueHanziBtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="hanZiBtnDown"/>
+                                <connections>
+                                    <action selector="onClickHanZi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wds-9c-crP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzu-gD-zEY">
+                                <rect key="frame" x="37" y="154" width="148" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="LZt-rx-nyK"/>
+                                    <constraint firstAttribute="width" constant="148" id="apE-iR-YhI"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="koujueBtn"/>
+                                <state key="highlighted" backgroundImage="kouJueBtnDown"/>
+                                <connections>
+                                    <action selector="onClickKouJue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="773-zy-b81"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DX-BA-8UZ">
+                                <rect key="frame" x="210" y="154" width="148" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="7vC-PI-ufA"/>
+                                    <constraint firstAttribute="width" constant="148" id="hkR-dC-Vaf"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="huaBanBtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="huaBanBtnDown"/>
+                                <connections>
+                                    <action selector="onClickHuaBan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeB-FK-D0X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cOr-Wc-UQH" firstAttribute="bottom" secondItem="4DX-BA-8UZ" secondAttribute="bottom" id="4em-08-291"/>
+                            <constraint firstItem="4DX-BA-8UZ" firstAttribute="leading" secondItem="Lzu-gD-zEY" secondAttribute="trailing" constant="25" id="5K3-a6-cg8"/>
+                            <constraint firstItem="cOr-Wc-UQH" firstAttribute="top" secondItem="Lzu-gD-zEY" secondAttribute="top" id="Jqr-96-3Qe"/>
+                            <constraint firstItem="mm1-Tv-2af" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NeE-NZ-vMa"/>
+                            <constraint firstItem="cOr-Wc-UQH" firstAttribute="top" secondItem="4DX-BA-8UZ" secondAttribute="top" id="RBz-Tl-hNr"/>
+                            <constraint firstItem="mm1-Tv-2af" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SNF-c3-WtC"/>
+                            <constraint firstAttribute="centerX" secondItem="4DX-BA-8UZ" secondAttribute="centerX" id="T7K-Qr-jWL"/>
+                            <constraint firstItem="cOr-Wc-UQH" firstAttribute="bottom" secondItem="Lzu-gD-zEY" secondAttribute="bottom" id="aUa-E7-EiG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mm1-Tv-2af" secondAttribute="bottom" id="bIk-eE-QSg"/>
+                            <constraint firstItem="cOr-Wc-UQH" firstAttribute="leading" secondItem="4DX-BA-8UZ" secondAttribute="trailing" constant="30" id="pia-Me-UhA"/>
+                            <constraint firstAttribute="trailing" secondItem="mm1-Tv-2af" secondAttribute="trailing" id="uGP-cT-1lM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4DX-BA-8UZ" secondAttribute="bottom" constant="30" id="zWb-7k-rw6"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="hanZiBtn" destination="cOr-Wc-UQH" id="yPD-8l-pIn"/>
+                        <outlet property="huaBanBtn" destination="4DX-BA-8UZ" id="Txo-o5-TPU"/>
+                        <outlet property="kouJueBtn" destination="Lzu-gD-zEY" id="Hn0-eh-DwE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-891" y="528"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hanZiBtnDown" width="167" height="175"/>
+        <image name="huaBanBtn" width="270" height="286"/>
+        <image name="huaBanBtnDown" width="180" height="191"/>
+        <image name="kouJueBtnDown" width="188" height="148"/>
+        <image name="koujueBtn" width="282" height="222"/>
+        <image name="mainbg" width="640" height="400"/>
+        <image name="xueHanziBtn" width="251" height="262"/>
+    </resources>
+</document>

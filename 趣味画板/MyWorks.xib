@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JJC-ee-XGo" customClass="MyWorks">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btn_box_sel.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZVV-ah-NTW" userLabel="WorksCOntent">
+                    <rect key="frame" x="5" y="8" width="150" height="145"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="work_frame_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="po9-zH-mYS">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                </imageView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2Y-gf-jHR" userLabel="selBtn">
+                    <rect key="frame" x="2" y="-1" width="155" height="163"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectWorks:" destination="JJC-ee-XGo" eventType="touchUpInside" id="o9F-eC-Thv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysb-1r-uP5" userLabel="delBtn">
+                    <rect key="frame" x="120" y="5" width="30" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="btn_del_sel.png"/>
+                    <connections>
+                        <action selector="deleteWorks:" destination="JJC-ee-XGo" eventType="touchUpInside" id="Yvp-lm-SK2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="worksContent" destination="ZVV-ah-NTW" id="ndb-hg-Exo"/>
+                <outlet property="worksDel" destination="Ysb-1r-uP5" id="0Px-CB-NG6"/>
+                <outlet property="worksSel" destination="f2Y-gf-jHR" id="dMJ-q2-hZX"/>
+            </connections>
+            <point key="canvasLocation" x="535" y="402"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_box_sel.png" width="113" height="106"/>
+        <image name="btn_del_sel.png" width="60" height="53"/>
+        <image name="work_frame_bg.png" width="546" height="385"/>
+    </resources>
+</document>

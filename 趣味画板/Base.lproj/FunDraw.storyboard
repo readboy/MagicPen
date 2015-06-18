@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="FunDrawID" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q3u-8p-nlt">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_board.png" translatesAutoresizingMaskIntoConstraints="NO" id="zXb-9Y-QcA">
+                                <rect key="frame" x="219" y="137" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="plA-Wd-6Xr"/>
+                                    <constraint firstAttribute="width" constant="130" id="tPB-0y-zjt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_barrel.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ans-5K-mdP">
+                                <rect key="frame" x="161" y="217" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Is-tl-zDD"/>
+                                    <constraint firstAttribute="width" constant="50" id="qth-yT-dFi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_stone.png" translatesAutoresizingMaskIntoConstraints="NO" id="B3R-cE-MPM">
+                                <rect key="frame" x="393" y="192" width="70" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="U8W-C8-Ywx"/>
+                                    <constraint firstAttribute="width" constant="70" id="wgt-vR-Nrj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_string.png" translatesAutoresizingMaskIntoConstraints="NO" id="iUy-Uu-SbD">
+                                <rect key="frame" x="159" y="111" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TJe-7c-9Vu"/>
+                                    <constraint firstAttribute="width" constant="250" id="hjS-L3-hGz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="welcome_titile" image="welcome_titile51.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZeW-hi-YXU" userLabel="title">
+                                <rect key="frame" x="124" y="0.0" width="320" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="3nS-Kr-FQV"/>
+                                    <constraint firstAttribute="height" constant="120" id="BQr-vP-15Q"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="welcome_angel" image="welcome_angel03.png" translatesAutoresizingMaskIntoConstraints="NO" id="od6-7r-xBS" userLabel="angel">
+                                <rect key="frame" x="11" y="20" width="350" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="ei8-xP-oO3"/>
+                                    <constraint firstAttribute="height" constant="130" id="ghr-Wc-1py"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="welcome_butterfly" image="welcome_butterfly03.png" translatesAutoresizingMaskIntoConstraints="NO" id="2wr-oc-fxO" userLabel="butterfly">
+                                <rect key="frame" x="152" y="201" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WTj-re-Eln"/>
+                                    <constraint firstAttribute="width" constant="30" id="sg2-4G-I4d"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="welcome_mushroom" image="welcome_mushroom01.png" translatesAutoresizingMaskIntoConstraints="NO" id="WzA-xl-xFF" userLabel="mushroom">
+                                <rect key="frame" x="393" y="202" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="DOm-lq-CSQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="fwd-EM-T7k"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="welcome_pigment" image="welcome_pigment01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Adt-6e-UIu" userLabel="pigment">
+                                <rect key="frame" x="239" y="165" width="85" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="82n-0I-a12"/>
+                                    <constraint firstAttribute="height" constant="50" id="xNz-kn-Caq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksb-qR-ZWh">
+                                <rect key="frame" x="530" y="12" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dlN-i0-EVM"/>
+                                    <constraint firstAttribute="width" constant="30" id="fvc-YF-hQH"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="btn_close_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rbClose:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mXm-3C-hnd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZeW-hi-YXU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="124" id="4wu-Au-bfc"/>
+                            <constraint firstAttribute="trailing" secondItem="B3R-cE-MPM" secondAttribute="trailing" constant="105" id="69u-Pq-0rq"/>
+                            <constraint firstItem="B3R-cE-MPM" firstAttribute="top" secondItem="WzA-xl-xFF" secondAttribute="bottom" constant="-40" id="BMF-wa-YKe"/>
+                            <constraint firstItem="zXb-9Y-QcA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="219" id="DbE-X4-qhJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Q3u-8p-nlt" secondAttribute="bottom" id="INy-Bp-bUM"/>
+                            <constraint firstItem="Ans-5K-mdP" firstAttribute="leading" secondItem="2wr-oc-fxO" secondAttribute="trailing" constant="-21" id="J1X-wA-bnP"/>
+                            <constraint firstAttribute="trailing" secondItem="Ksb-qR-ZWh" secondAttribute="trailing" constant="8" id="RVt-ke-YMD"/>
+                            <constraint firstAttribute="trailing" secondItem="Q3u-8p-nlt" secondAttribute="trailing" id="U6E-fr-pVo"/>
+                            <constraint firstItem="ZeW-hi-YXU" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="WmM-uk-gZp"/>
+                            <constraint firstAttribute="trailing" secondItem="zXb-9Y-QcA" secondAttribute="trailing" constant="219" id="aXr-RE-qUF"/>
+                            <constraint firstItem="Adt-6e-UIu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="239" id="cRC-Di-vvI"/>
+                            <constraint firstAttribute="trailing" secondItem="Adt-6e-UIu" secondAttribute="trailing" constant="244" id="cmF-ag-ZXs"/>
+                            <constraint firstItem="od6-7r-xBS" firstAttribute="top" secondItem="ZeW-hi-YXU" secondAttribute="bottom" constant="-100" id="cpn-pF-hM8"/>
+                            <constraint firstItem="zXb-9Y-QcA" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="137" id="d4h-1E-pkX"/>
+                            <constraint firstItem="Q3u-8p-nlt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="fRw-2W-CA7"/>
+                            <constraint firstItem="Adt-6e-UIu" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="165" id="gG4-yz-pkf"/>
+                            <constraint firstAttribute="bottom" secondItem="zXb-9Y-QcA" secondAttribute="bottom" constant="53" id="hXQ-dk-5Jp"/>
+                            <constraint firstAttribute="trailing" secondItem="ZeW-hi-YXU" secondAttribute="trailing" constant="124" id="iAS-fM-zmY"/>
+                            <constraint firstItem="Ans-5K-mdP" firstAttribute="top" secondItem="2wr-oc-fxO" secondAttribute="bottom" constant="-15" id="iUj-A6-mYg"/>
+                            <constraint firstItem="zXb-9Y-QcA" firstAttribute="leading" secondItem="Ans-5K-mdP" secondAttribute="trailing" constant="8" id="lUK-aC-GBG"/>
+                            <constraint firstItem="Q3u-8p-nlt" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="ncI-vG-Bbf"/>
+                            <constraint firstItem="ZeW-hi-YXU" firstAttribute="leading" secondItem="od6-7r-xBS" secondAttribute="trailing" constant="-237" id="nw9-VG-VCE"/>
+                            <constraint firstAttribute="bottom" secondItem="B3R-cE-MPM" secondAttribute="bottom" constant="78" id="oeL-X1-Q6e"/>
+                            <constraint firstAttribute="trailing" secondItem="iUy-Uu-SbD" secondAttribute="trailing" constant="159" id="qTg-Sk-bDe"/>
+                            <constraint firstItem="iUy-Uu-SbD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="159" id="qfh-po-OTh"/>
+                            <constraint firstAttribute="bottom" secondItem="Ans-5K-mdP" secondAttribute="bottom" constant="53" id="tmN-Ix-1Eo"/>
+                            <constraint firstItem="iUy-Uu-SbD" firstAttribute="top" secondItem="ZeW-hi-YXU" secondAttribute="bottom" constant="-9" id="uVN-hd-CxX"/>
+                            <constraint firstAttribute="bottom" secondItem="Adt-6e-UIu" secondAttribute="bottom" constant="105" id="uY1-Gv-Hxg"/>
+                            <constraint firstItem="Ksb-qR-ZWh" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="12" id="wcM-Jj-zl3"/>
+                            <constraint firstItem="B3R-cE-MPM" firstAttribute="leading" secondItem="WzA-xl-xFF" secondAttribute="trailing" constant="-30" id="x6i-78-EN2"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="rbAngel" destination="od6-7r-xBS" id="f9i-kQ-dtG"/>
+                        <outlet property="rbButterfly" destination="2wr-oc-fxO" id="Ah5-dl-UaH"/>
+                        <outlet property="rbMushroom" destination="WzA-xl-xFF" id="QaY-Vw-BZT"/>
+                        <outlet property="rbPigment" destination="Adt-6e-UIu" id="kl8-EY-a1X"/>
+                        <outlet property="rbTitle" destination="ZeW-hi-YXU" id="azf-io-dlW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="543"/>
+        </scene>
+        <!--Drawing Controller-->
+        <scene sceneID="LxM-vG-csv">
+            <objects>
+                <viewController storyboardIdentifier="DrawingController" id="jea-KA-atC" customClass="DrawingController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="19O-gx-3Lf"/>
+                        <viewControllerLayoutGuide type="bottom" id="JsF-Z2-zD4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E9w-en-f2B">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="palette_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="41I-Uo-aqx" userLabel="画室背景">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="palette_bg_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Bm-og-8O6" userLabel="画板修饰">
+                                <rect key="frame" x="29" y="26" width="478" height="10"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="palette_background_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="zbh-KD-tpX" userLabel="画板位置">
+                                <rect key="frame" x="29" y="36" width="478" height="257"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G2-gg-5EH" userLabel="关闭">
+                                <rect key="frame" x="525" y="10" width="35" height="35"/>
+                                <state key="normal" image="btn_close_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="btn_close_sel.png"/>
+                                <connections>
+                                    <action selector="closeDrawing:" destination="jea-KA-atC" eventType="touchUpInside" id="XWq-gM-v6S"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r8H-Bg-is3" userLabel="内容板">
+                                <rect key="frame" x="522" y="80" width="40" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVF-M0-gET" userLabel="上一页">
+                                <rect key="frame" x="527" y="50" width="30" height="25"/>
+                                <state key="normal" image="btn_pageup_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="btn_pageup_sel.png"/>
+                                <connections>
+                                    <action selector="pageUp:" destination="jea-KA-atC" eventType="touchUpInside" id="2oc-S8-Gpf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuz-qR-9ld" userLabel="下一页">
+                                <rect key="frame" x="527" y="215" width="30" height="25"/>
+                                <state key="normal" image="btn_pagedown_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="btn_pagedown_sel.png"/>
+                                <connections>
+                                    <action selector="pageDown:" destination="jea-KA-atC" eventType="touchUpInside" id="q3g-fD-wLj"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nnn-Bi-ClY" userLabel="线宽">
+                                <rect key="frame" x="522" y="245" width="40" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul2-Li-ZG1" userLabel="细线">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="15"/>
+                                        <state key="normal" image="palette_pensize_small_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="palette_pensize_small_invalid.png"/>
+                                        <connections>
+                                            <action selector="changeWidth:" destination="jea-KA-atC" eventType="touchUpInside" id="oyq-bF-D1J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRa-tf-MNc" userLabel="中线">
+                                        <rect key="frame" x="0.0" y="20" width="40" height="15"/>
+                                        <state key="normal" image="palette_pensize_middle_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="palette_pensize_middle_invalid.png"/>
+                                        <connections>
+                                            <action selector="changeWidth:" destination="jea-KA-atC" eventType="touchUpInside" id="Mro-OW-XIS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lw-pG-dl2" userLabel="粗线">
+                                        <rect key="frame" x="0.0" y="40" width="40" height="15"/>
+                                        <state key="normal" image="palette_pensize_large_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="palette_pensize_large_invalid.png"/>
+                                        <connections>
+                                            <action selector="changeWidth:" destination="jea-KA-atC" eventType="touchUpInside" id="yCV-4T-XOx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcF-Um-GUl" userLabel="新建">
+                                <rect key="frame" x="469" y="68" width="50" height="50"/>
+                                <state key="normal" backgroundImage="btn_newwork_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="btn_newwork_sel.png"/>
+                                <connections>
+                                    <action selector="newWork:" destination="jea-KA-atC" eventType="touchUpInside" id="IyH-2n-5cg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K38-eY-CWG" userLabel="删除">
+                                <rect key="frame" x="469" y="126" width="50" height="50"/>
+                                <state key="normal" backgroundImage="btn_delete_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="btn_delete_sel.png"/>
+                                <connections>
+                                    <action selector="deleteSomething:" destination="jea-KA-atC" eventType="touchUpInside" id="ywq-qj-KWu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPi-we-O1F" userLabel="作品集">
+                                <rect key="frame" x="469" y="184" width="50" height="50"/>
+                                <state key="normal" backgroundImage="btn_works_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="btn_works_sel.png"/>
+                                <connections>
+                                    <action selector="works:" destination="jea-KA-atC" eventType="touchUpInside" id="rm0-eK-ftj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93w-hu-qLI" userLabel="动画修饰">
+                                <rect key="frame" x="353" y="10" width="50" height="50"/>
+                                <state key="normal" backgroundImage="btn_item_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="btn_item_sel.png"/>
+                                <connections>
+                                    <action selector="itemSel:" destination="jea-KA-atC" eventType="touchUpInside" id="xdC-H7-BZZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w69-YS-CDw" userLabel="画板背景">
+                                <rect key="frame" x="295" y="10" width="50" height="50"/>
+                                <state key="normal" backgroundImage="btn_background_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="btn_background_sel.png"/>
+                                <connections>
+                                    <action selector="backgroundSel:" destination="jea-KA-atC" eventType="touchUpInside" id="ZIh-lm-1vw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bee-3w-4X7" userLabel="橡皮擦">
+                                <rect key="frame" x="237" y="10" width="50" height="50"/>
+                                <state key="normal" backgroundImage="btn_eraser_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="btn_eraser_sel.png"/>
+                                <connections>
+                                    <action selector="eraser:" destination="jea-KA-atC" eventType="touchUpInside" id="7oL-JR-43k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pZ-cB-HN3" userLabel="画笔">
+                                <rect key="frame" x="179" y="10" width="50" height="50"/>
+                                <state key="normal" backgroundImage="btn_pencil_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="btn_pencil_sel.png"/>
+                                <connections>
+                                    <action selector="pencil:" destination="jea-KA-atC" eventType="touchUpInside" id="YF2-1v-9G0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isq-Gm-O7t" userLabel="操作提示">
+                                <rect key="frame" x="469" y="10" width="50" height="50"/>
+                                <state key="normal" image="btn_box_nor.png" backgroundImage="btn_box_control_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="btn_box_sel.png" backgroundImage="btn_box_control_sel.png"/>
+                                <connections>
+                                    <action selector="showBox:" destination="jea-KA-atC" eventType="touchUpInside" id="b4Y-Mc-NDL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4Q-7w-nP2" userLabel="小工具提示">
+                                <rect key="frame" x="411" y="10" width="50" height="50"/>
+                                <state key="normal" image="btn_pencil.png" backgroundImage="btn_box_control_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="btn_box_control_sel.png"/>
+                                <connections>
+                                    <action selector="showKit:" destination="jea-KA-atC" eventType="touchUpInside" id="AGM-ZI-ItS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="contentSelBoard" destination="r8H-Bg-is3" id="sJ5-Fm-bra"/>
+                        <outlet property="paletteLocation" destination="zbh-KD-tpX" id="bBU-Dj-WKb"/>
+                        <outlet property="showKit" destination="k4Q-7w-nP2" id="r2z-hh-yrN"/>
+                        <outlet property="widthViews" destination="nnn-Bi-ClY" id="VYg-rQ-PZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TpB-Hn-GeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481" y="543"/>
+        </scene>
+        <!--Works Controller-->
+        <scene sceneID="Cf0-8Q-nvb">
+            <objects>
+                <viewController storyboardIdentifier="WorksController" id="7hy-yn-Jjw" customClass="WorksController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tSc-mc-oWL"/>
+                        <viewControllerLayoutGuide type="bottom" id="lSN-hZ-R2i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lLd-hc-iqc">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="work_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="yg6-Ti-XPR">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MM-XE-Do7" userLabel="左滚动">
+                                <rect key="frame" x="11" y="145" width="50" height="50"/>
+                                <state key="normal" title="Button" image="btn_left_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="btn_left_sel.png"/>
+                                <connections>
+                                    <action selector="btnLeft:" destination="7hy-yn-Jjw" eventType="touchUpInside" id="CcM-l6-fG8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUm-Km-HNo" userLabel="右滚动">
+                                <rect key="frame" x="502" y="145" width="50" height="50"/>
+                                <state key="normal" title="Button" image="btn_right_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="btn_right_sel.png"/>
+                                <connections>
+                                    <action selector="btnRight:" destination="7hy-yn-Jjw" eventType="touchUpInside" id="dCP-Cn-UWm"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Sd-rc-kcL" userLabel="画廊位置">
+                                <rect key="frame" x="69" y="90" width="430" height="160"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="work_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ehd-5L-kao" userLabel="标题">
+                                <rect key="frame" x="134" y="20" width="300" height="60"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WI7-Ig-61I">
+                                <rect key="frame" x="84" y="100" width="400" height="120"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYk-mO-h9b" userLabel="关闭">
+                                <rect key="frame" x="522" y="6" width="30" height="30"/>
+                                <state key="normal" image="btn_close_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="btn_close_sel.png"/>
+                                <connections>
+                                    <action selector="btnClose:" destination="7hy-yn-Jjw" eventType="touchUpInside" id="FKu-YX-SMx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtd-UU-1sB" userLabel="回收">
+                                <rect key="frame" x="474" y="0.0" width="40" height="40"/>
+                                <state key="normal" image="btn_recycle_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="btn_recycle_sel.png"/>
+                                <connections>
+                                    <action selector="btnRecycle:" destination="7hy-yn-Jjw" eventType="touchUpInside" id="h7n-Sb-fva"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="numTips" destination="WI7-Ig-61I" id="7oT-Kp-7dr"/>
+                        <outlet property="worksPlace" destination="0Sd-rc-kcL" id="aCg-Bi-yHY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ob-cZ-Fcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="543"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_background_nor.png" width="120" height="120"/>
+        <image name="btn_background_sel.png" width="120" height="120"/>
+        <image name="btn_box_control_nor.png" width="120" height="120"/>
+        <image name="btn_box_control_sel.png" width="120" height="120"/>
+        <image name="btn_box_nor.png" width="113" height="106"/>
+        <image name="btn_box_sel.png" width="113" height="106"/>
+        <image name="btn_close_nor.png" width="74" height="76"/>
+        <image name="btn_close_sel.png" width="74" height="76"/>
+        <image name="btn_delete_nor.png" width="120" height="120"/>
+        <image name="btn_delete_sel.png" width="120" height="120"/>
+        <image name="btn_eraser_nor.png" width="120" height="120"/>
+        <image name="btn_eraser_sel.png" width="120" height="120"/>
+        <image name="btn_item_nor.png" width="120" height="120"/>
+        <image name="btn_item_sel.png" width="120" height="120"/>
+        <image name="btn_left_nor.png" width="82" height="80"/>
+        <image name="btn_left_sel.png" width="82" height="80"/>
+        <image name="btn_newwork_nor.png" width="120" height="120"/>
+        <image name="btn_newwork_sel.png" width="120" height="120"/>
+        <image name="btn_pagedown_nor.png" width="98" height="49"/>
+        <image name="btn_pagedown_sel.png" width="98" height="49"/>
+        <image name="btn_pageup_nor.png" width="98" height="49"/>
+        <image name="btn_pageup_sel.png" width="98" height="49"/>
+        <image name="btn_pencil.png" width="113" height="106"/>
+        <image name="btn_pencil_nor.png" width="120" height="120"/>
+        <image name="btn_pencil_sel.png" width="120" height="120"/>
+        <image name="btn_recycle_nor.png" width="98" height="118"/>
+        <image name="btn_recycle_sel.png" width="98" height="118"/>
+        <image name="btn_right_nor.png" width="82" height="80"/>
+        <image name="btn_right_sel.png" width="82" height="80"/>
+        <image name="btn_works_nor.png" width="120" height="120"/>
+        <image name="btn_works_sel.png" width="120" height="120"/>
+        <image name="palette_background_01.png" width="1084" height="700"/>
+        <image name="palette_bg.png" width="1280" height="800"/>
+        <image name="palette_bg_top.png" width="1084" height="17"/>
+        <image name="palette_pensize_large_invalid.png" width="120" height="25"/>
+        <image name="palette_pensize_large_nor.png" width="120" height="25"/>
+        <image name="palette_pensize_middle_invalid.png" width="120" height="25"/>
+        <image name="palette_pensize_middle_nor.png" width="120" height="25"/>
+        <image name="palette_pensize_small_invalid.png" width="120" height="25"/>
+        <image name="palette_pensize_small_nor.png" width="120" height="25"/>
+        <image name="welcome_angel03.png" width="800" height="450"/>
+        <image name="welcome_barrel.png" width="169" height="148"/>
+        <image name="welcome_bg.png" width="1280" height="800"/>
+        <image name="welcome_board.png" width="296" height="360"/>
+        <image name="welcome_butterfly03.png" width="80" height="80"/>
+        <image name="welcome_mushroom01.png" width="72" height="80"/>
+        <image name="welcome_pigment01.png" width="300" height="260"/>
+        <image name="welcome_stone.png" width="180" height="100"/>
+        <image name="welcome_string.png" width="584" height="47"/>
+        <image name="welcome_titile51.png" width="830" height="350"/>
+        <image name="work_bg.png" width="1280" height="800"/>
+        <image name="work_title.png" width="471" height="109"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

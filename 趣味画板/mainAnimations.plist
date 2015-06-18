@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>welcome_angel</key>
+	<string>32</string>
+	<key>welcome_butterfly</key>
+	<string>4</string>
+	<key>welcome_mushroom</key>
+	<string>35</string>
+	<key>welcome_pigment</key>
+	<string>60</string>
+	<key>welcome_titile</key>
+	<string>52</string>
+</dict>
+</plist>
