@@ -50,9 +50,10 @@
 - (IBAction)onClickHanZi:(id)sender {
     NSLog(@"点击到了巧学汉字");
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"LearnChinese" bundle:nil];
-    UIViewController *drawingController = [storyboard instantiateViewControllerWithIdentifier:@"LearnChineseMainID"];
+    UIViewController *learnChniese = [storyboard instantiateViewControllerWithIdentifier:@"LearnChineseMainID"];
     
-    [self presentViewController:drawingController
+    learnChniese.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:learnChniese
                        animated:YES
                      completion:nil];
     

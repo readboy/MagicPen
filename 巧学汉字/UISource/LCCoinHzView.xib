@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LCCoinHzView">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_front.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZiY-tr-AKn" userLabel="汉字背景">
+                    <rect key="frame" x="0.0" y="0.0" width="185" height="250"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8n-Hx-dZc">
+                    <rect key="frame" x="16" y="51" width="152" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="op5-Ca-jb3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                    <color key="textColor" red="0.64465974506578938" green="0.50626280869094475" blue="0.38648359419004924" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="云" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bj6-4o-jye">
+                    <rect key="frame" x="16" y="111" width="152" height="121"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="121" id="Ach-tt-WLw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="78"/>
+                    <color key="textColor" red="0.17434157943883935" green="0.64465974506578938" blue="0.61531546735954223" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="Veo-bz-xJN">
+                    <rect key="frame" x="0.0" y="0.0" width="185" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bj6-4o-jye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="5sh-Qd-lk5"/>
+                <constraint firstItem="Veo-bz-xJN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EDT-8m-PhJ"/>
+                <constraint firstItem="ZiY-tr-AKn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GcS-NH-REy"/>
+                <constraint firstItem="s8n-Hx-dZc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Ot7-nJ-2KP"/>
+                <constraint firstItem="ZiY-tr-AKn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xkn-5R-Lnb"/>
+                <constraint firstItem="bj6-4o-jye" firstAttribute="top" secondItem="s8n-Hx-dZc" secondAttribute="bottom" constant="14" id="b9u-CO-nbm"/>
+                <constraint firstAttribute="trailing" secondItem="s8n-Hx-dZc" secondAttribute="trailing" constant="17" id="bmb-LY-hLZ"/>
+                <constraint firstAttribute="bottom" secondItem="bj6-4o-jye" secondAttribute="bottom" constant="18" id="ikG-Y3-sDT"/>
+                <constraint firstAttribute="trailing" secondItem="bj6-4o-jye" secondAttribute="trailing" constant="17" id="iod-xZ-kSI"/>
+                <constraint firstAttribute="trailing" secondItem="ZiY-tr-AKn" secondAttribute="trailing" id="mRT-YY-ZTl"/>
+                <constraint firstAttribute="bottom" secondItem="Veo-bz-xJN" secondAttribute="bottom" id="qdu-mz-tgA"/>
+                <constraint firstAttribute="bottom" secondItem="ZiY-tr-AKn" secondAttribute="bottom" id="ujW-Jp-aS2"/>
+                <constraint firstItem="Veo-bz-xJN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="v5b-F4-Xxi"/>
+                <constraint firstAttribute="trailing" secondItem="Veo-bz-xJN" secondAttribute="trailing" id="y36-bo-WhL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgFg" destination="Veo-bz-xJN" id="wBC-1X-HQ8"/>
+                <outlet property="txtHz" destination="bj6-4o-jye" id="uIg-hh-XFM"/>
+                <outlet property="txtPinYin" destination="s8n-Hx-dZc" id="1V4-Zn-ZmN"/>
+            </connections>
+            <point key="canvasLocation" x="502.5" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="card_back.png" width="370" height="500"/>
+        <image name="card_front.png" width="370" height="500"/>
+    </resources>
+</document>
