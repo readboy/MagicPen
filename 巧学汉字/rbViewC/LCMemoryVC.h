@@ -9,8 +9,15 @@
 #import "LearnChnieseBaseVC.h"
 #import "LCCoinHzView.h"
 #import "LCCoinWordView.h"
+#import "HanziDAO.h"
 
-@interface LCMemoryVC : LearnChnieseBaseVC
+#import "ZLSwipeableView.h"
+
+@interface LCMemoryVC : LearnChnieseBaseVC<ZLSwipeableViewDataSource,
+ZLSwipeableViewDelegate>
+
+
+@property (weak, nonatomic) IBOutlet ZLSwipeableView *hzCardView;
 @property (weak, nonatomic) IBOutlet UIButton *btnMemory;
 @property (weak, nonatomic) IBOutlet UIButton *btnRead;
 @property (weak, nonatomic) IBOutlet UIButton *btnPractice;
@@ -20,5 +27,8 @@
 
 - (IBAction)onBack:(id)sender;
 - (IBAction)onBigMemory:(id)sender;
+
+#pragma Data
+@property (assign,nonatomic)int hzGroupId;//汉字组的序号 0-32
 
 @end

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,16 +17,16 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8n-Hx-dZc">
                     <rect key="frame" x="16" y="51" width="152" height="46"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="46" id="op5-Ca-jb3"/>
+                        <constraint firstAttribute="width" secondItem="s8n-Hx-dZc" secondAttribute="height" multiplier="76:23" id="z4e-nj-b3M"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
                     <color key="textColor" red="0.64465974506578938" green="0.50626280869094475" blue="0.38648359419004924" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="云" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bj6-4o-jye">
                     <rect key="frame" x="16" y="111" width="152" height="121"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="121" id="Ach-tt-WLw"/>
+                        <constraint firstAttribute="width" secondItem="bj6-4o-jye" secondAttribute="height" multiplier="152:121" id="tak-2g-IUc"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="78"/>
                     <color key="textColor" red="0.17434157943883935" green="0.64465974506578938" blue="0.61531546735954223" alpha="1" colorSpace="calibratedRGB"/>

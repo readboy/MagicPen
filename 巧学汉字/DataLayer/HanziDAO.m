@@ -108,8 +108,8 @@
                     hzInfo:(HzDataInfo*)hzInfo
                     offset:(int) offset
 {
-    hzInfo.hanzi = [self getHanZi:buffer];
-    hzInfo.pinyin = [self getPinYin:buffer + 4];
+    hzInfo.hanzi = [self getHanZi:buffer + offset];
+    hzInfo.pinyin = [self getPinYin:buffer + offset + 4];
  
     hzInfo.hzSndAddr     = [self readBuffer2Num:buffer  off: offset + 16 length:4];
     hzInfo.hzSndSize     = [self readBuffer2Num:buffer  off: offset + 20 length:4];
@@ -174,12 +174,13 @@
     }
     Byte * byte;
     NSMutableArray * hzArr = [NSMutableArray array];
-    HzDataInfo* info = [[HzDataInfo alloc]init];
+  
    
     [fileHandle seekToFileOffset:(hzInfoAddr + groupIndex * HZGROUP_NUM * HZINFO_LEN)];
     byte = (Byte*)[fileHandle readDataOfLength:HZGROUP_NUM * HZINFO_LEN].bytes;
     
     for (int i = 0; i < HZGROUP_NUM; i++) {
+        HzDataInfo* info = [[HzDataInfo alloc]init];
         info.index = groupIndex * HZGROUP_NUM + i;
         [self bufferToHzDataInfo:byte hzInfo:info offset: HZINFO_LEN * i];
         [hzArr addObject:info];
@@ -198,10 +199,11 @@
  */
 -(UIImage*)hzDataGetImage:(int)addr size:(int)size
 {
+    NSLog(@"hzDataGetImage ,addr = %d,size = %d",addr,size);
     [fileHandle seekToFileOffset:addr];
     NSData * data = [fileHandle readDataOfLength:size];
 
-    return [UIImage imageWithData:data];;
+    return [UIImage imageWithData:data];
 }
 /**
  *  获取语音的 Data

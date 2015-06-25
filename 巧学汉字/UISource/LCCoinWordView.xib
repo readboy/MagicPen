@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -17,7 +18,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="白云" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCE-i2-P2b">
                     <rect key="frame" x="17" y="40" width="150" height="65"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="65" id="YjI-kU-Ljr"/>
+                        <constraint firstAttribute="width" secondItem="yCE-i2-P2b" secondAttribute="height" multiplier="30:13" id="Dku-NU-uZe"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
                     <color key="textColor" red="0.80736019736842102" green="0.38463712993421051" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -27,17 +28,17 @@
                     <rect key="frame" x="17" y="110" width="150" height="120"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="120" id="AwY-IR-x3i"/>
-                        <constraint firstAttribute="width" constant="150" id="FVV-VP-gHl"/>
+                        <constraint firstAttribute="width" secondItem="7db-ko-7qq" secondAttribute="height" multiplier="5:4" id="otz-oQ-QGP"/>
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="yCE-i2-P2b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="3wc-Am-CaS"/>
-                <constraint firstAttribute="centerX" secondItem="7db-ko-7qq" secondAttribute="centerX" id="43J-GQ-Lln"/>
                 <constraint firstItem="7db-ko-7qq" firstAttribute="top" secondItem="yCE-i2-P2b" secondAttribute="bottom" constant="5" id="9Y1-Ls-2WZ"/>
                 <constraint firstItem="was-6Y-Mg6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Aub-O8-ffj"/>
+                <constraint firstAttribute="trailing" secondItem="7db-ko-7qq" secondAttribute="trailing" constant="18" id="Ose-M8-tef"/>
+                <constraint firstItem="7db-ko-7qq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="R2D-mz-OoF"/>
                 <constraint firstAttribute="bottom" secondItem="was-6Y-Mg6" secondAttribute="bottom" id="TAT-b7-GrM"/>
                 <constraint firstItem="was-6Y-Mg6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Tqq-TF-6qK"/>
                 <constraint firstAttribute="trailing" secondItem="yCE-i2-P2b" secondAttribute="trailing" constant="18" id="c5b-Qe-y5V"/>

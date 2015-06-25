@@ -42,4 +42,8 @@
  *  翻转卡片
  */
 -(void)spinCard;
+
+
+
+
 @end

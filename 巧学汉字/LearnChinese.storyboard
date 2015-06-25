@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--课程表-->
@@ -364,7 +365,7 @@
                             <view tag="150" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6i-NM-o8o" userLabel="卡片View">
                                 <rect key="frame" x="31" y="98" width="552" height="268"/>
                                 <subviews>
-                                    <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-CP-0oE" userLabel="左卡片" customClass="LCCardView">
+                                    <view clipsSubviews="YES" tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-CP-0oE" userLabel="左卡片" customClass="LCCardView">
                                         <rect key="frame" x="17" y="53" width="130" height="177"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="mBI-Gp-vzY">
@@ -380,10 +381,86 @@
                                             <constraint firstAttribute="trailing" secondItem="mBI-Gp-vzY" secondAttribute="trailing" id="k9t-66-IYF"/>
                                         </constraints>
                                     </view>
-                                    <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sG-Cs-hBU" userLabel="大卡片" customClass="LCCardView">
+                                    <view clipsSubviews="YES" tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sG-Cs-hBU" userLabel="大卡片" customClass="LCCardView">
                                         <rect key="frame" x="184" y="8" width="185" height="250"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="QOk-7X-vmh">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vox-rv-8rT" userLabel="词语">
+                                                <rect key="frame" x="0.0" y="0.0" width="185" height="250"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wordtest.png" translatesAutoresizingMaskIntoConstraints="NO" id="67A-jL-1xK">
+                                                        <rect key="frame" x="17" y="108" width="150" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="67A-jL-1xK" secondAttribute="height" multiplier="5:4" id="dF2-iI-vvt"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_front.png" translatesAutoresizingMaskIntoConstraints="NO" id="dva-A7-Rfz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185" height="250"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="田" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xz-jc-bom">
+                                                        <rect key="frame" x="24" y="40" width="136" height="68"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="7Xz-jc-bom" secondAttribute="height" multiplier="2:1" id="JNd-8s-yjg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                        <color key="textColor" red="0.63283828171809775" green="0.42368358377826065" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="67A-jL-1xK" secondAttribute="bottom" constant="22" id="0uX-J0-yIe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7Xz-jc-bom" secondAttribute="trailing" constant="25" id="7jm-Yi-rgg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dva-A7-Rfz" secondAttribute="bottom" id="Zrm-1f-zXM"/>
+                                                    <constraint firstItem="dva-A7-Rfz" firstAttribute="top" secondItem="Vox-rv-8rT" secondAttribute="top" id="an8-tk-Yl9"/>
+                                                    <constraint firstItem="dva-A7-Rfz" firstAttribute="leading" secondItem="Vox-rv-8rT" secondAttribute="leading" id="eB4-Tj-2Do"/>
+                                                    <constraint firstAttribute="trailing" secondItem="67A-jL-1xK" secondAttribute="trailing" constant="18" id="enB-Mr-fQq"/>
+                                                    <constraint firstItem="7Xz-jc-bom" firstAttribute="leading" secondItem="Vox-rv-8rT" secondAttribute="leading" constant="24" id="fPi-5K-riQ"/>
+                                                    <constraint firstItem="67A-jL-1xK" firstAttribute="leading" secondItem="Vox-rv-8rT" secondAttribute="leading" constant="17" id="lqs-Js-6g8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dva-A7-Rfz" secondAttribute="trailing" id="teR-oO-0DM"/>
+                                                    <constraint firstItem="67A-jL-1xK" firstAttribute="top" secondItem="7Xz-jc-bom" secondAttribute="bottom" id="vLg-CS-FJC"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xx4-Ni-9lo" userLabel="汉字">
+                                                <rect key="frame" x="0.0" y="0.0" width="185" height="250"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_front.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z7V-sj-oQz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185" height="250"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="田" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uy-EG-V7L">
+                                                        <rect key="frame" x="20" y="125" width="145" height="102"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="1uy-EG-V7L" secondAttribute="height" multiplier="145:102" id="xoI-qJ-DPY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="86"/>
+                                                        <color key="textColor" red="1" green="0.59215686270000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwf-3g-zf1">
+                                                        <rect key="frame" x="22" y="64" width="141" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Vwf-3g-zf1" secondAttribute="height" multiplier="47:16" id="eag-eJ-REE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                        <color key="textColor" red="0.1743415794" green="0.64465974510000001" blue="0.61531546739999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Z7V-sj-oQz" firstAttribute="top" secondItem="xx4-Ni-9lo" secondAttribute="top" id="07y-s4-lGz"/>
+                                                    <constraint firstItem="1uy-EG-V7L" firstAttribute="top" secondItem="Vwf-3g-zf1" secondAttribute="bottom" constant="13" id="2gV-7c-rXP"/>
+                                                    <constraint firstItem="Vwf-3g-zf1" firstAttribute="leading" secondItem="xx4-Ni-9lo" secondAttribute="leading" constant="22" id="59G-6y-wuz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1uy-EG-V7L" secondAttribute="trailing" constant="20" id="9Cp-U4-OaU"/>
+                                                    <constraint firstItem="Z7V-sj-oQz" firstAttribute="leading" secondItem="xx4-Ni-9lo" secondAttribute="leading" id="IoC-l4-5v3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Vwf-3g-zf1" secondAttribute="trailing" constant="22" id="Z8I-ZA-Rhw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Z7V-sj-oQz" secondAttribute="bottom" id="bEQ-so-tI3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1uy-EG-V7L" secondAttribute="bottom" constant="23" id="hBq-R8-hxB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Z7V-sj-oQz" secondAttribute="trailing" id="iyA-7U-kpI"/>
+                                                    <constraint firstItem="1uy-EG-V7L" firstAttribute="leading" secondItem="xx4-Ni-9lo" secondAttribute="leading" constant="20" id="zHr-DF-0ot"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="QOk-7X-vmh">
                                                 <rect key="frame" x="0.0" y="0.0" width="185" height="250"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="185" id="bQg-GD-vMw"/>
@@ -392,15 +469,23 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="xx4-Ni-9lo" firstAttribute="top" secondItem="0sG-Cs-hBU" secondAttribute="top" id="18e-m2-4Rk"/>
+                                            <constraint firstItem="xx4-Ni-9lo" firstAttribute="leading" secondItem="0sG-Cs-hBU" secondAttribute="leading" id="4pf-yy-jeM"/>
                                             <constraint firstAttribute="bottom" secondItem="QOk-7X-vmh" secondAttribute="bottom" id="5ew-Oa-82H"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="185" id="Cxi-Sr-kag"/>
                                             <constraint firstItem="QOk-7X-vmh" firstAttribute="top" secondItem="0sG-Cs-hBU" secondAttribute="top" id="DDv-kI-hsh"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Jp3-2B-iMi"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vox-rv-8rT" secondAttribute="trailing" id="RHS-1u-b6y"/>
                                             <constraint firstItem="QOk-7X-vmh" firstAttribute="leading" secondItem="0sG-Cs-hBU" secondAttribute="leading" id="Unt-yU-6Pc"/>
+                                            <constraint firstItem="Vox-rv-8rT" firstAttribute="leading" secondItem="0sG-Cs-hBU" secondAttribute="leading" id="VGS-Kd-XEQ"/>
+                                            <constraint firstItem="Vox-rv-8rT" firstAttribute="top" secondItem="0sG-Cs-hBU" secondAttribute="top" id="cDr-qp-OEr"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vox-rv-8rT" secondAttribute="bottom" id="lS4-LT-26u"/>
+                                            <constraint firstAttribute="bottom" secondItem="xx4-Ni-9lo" secondAttribute="bottom" id="rZ5-Ix-ctK"/>
+                                            <constraint firstAttribute="trailing" secondItem="xx4-Ni-9lo" secondAttribute="trailing" id="srz-8k-wn3"/>
                                             <constraint firstAttribute="trailing" secondItem="QOk-7X-vmh" secondAttribute="trailing" id="yUL-gv-o7F"/>
                                         </constraints>
                                     </view>
-                                    <view tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLx-F7-NVF" userLabel="右卡片1" customClass="LCCardView">
+                                    <view clipsSubviews="YES" tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLx-F7-NVF" userLabel="右卡片1" customClass="LCCardView">
                                         <rect key="frame" x="404" y="53" width="130" height="177"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="CjP-LV-e5l">
@@ -416,7 +501,7 @@
                                             <constraint firstAttribute="bottom" secondItem="CjP-LV-e5l" secondAttribute="bottom" id="yR1-Vt-Mu6"/>
                                         </constraints>
                                     </view>
-                                    <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd2-qf-wpi" userLabel="右卡片2" customClass="LCCardView">
+                                    <view clipsSubviews="YES" tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd2-qf-wpi" userLabel="右卡片2" customClass="LCCardView">
                                         <rect key="frame" x="404" y="53" width="130" height="177"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="xyK-5w-kdg">
@@ -509,6 +594,10 @@
                                     <action selector="onBack:" destination="07P-MI-fio" eventType="touchUpInside" id="MGT-nt-ffI"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u2C-Ew-VkT" customClass="ZLSwipeableView">
+                                <rect key="frame" x="488" y="28" width="185" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -530,6 +619,7 @@
                         <outlet property="btnMemory" destination="Lcn-G2-Asc" id="9sd-kf-GIs"/>
                         <outlet property="btnPractice" destination="lKz-Fr-euu" id="rU8-XN-Fjl"/>
                         <outlet property="btnRead" destination="JRB-Yr-xPs" id="oge-Ei-IPE"/>
+                        <outlet property="hzCardView" destination="u2C-Ew-VkT" id="2GI-GD-8dY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FK4-oE-Rf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -577,6 +667,7 @@
         <image name="btn_course_01.png" width="100" height="57"/>
         <image name="btn_course_02.png" width="100" height="57"/>
         <image name="card_back.png" width="370" height="500"/>
+        <image name="card_front.png" width="370" height="500"/>
         <image name="courseDialog" width="316" height="279"/>
         <image name="course_close_01.png" width="95" height="95"/>
         <image name="course_close_02.png" width="95" height="95"/>
@@ -594,5 +685,6 @@
         <image name="small_readwrite_nor.png" width="69" height="69"/>
         <image name="small_readwrite_sel.png" width="69" height="69"/>
         <image name="word_board.png" width="75" height="75"/>
+        <image name="wordtest.png" width="300" height="240"/>
     </resources>
 </document>

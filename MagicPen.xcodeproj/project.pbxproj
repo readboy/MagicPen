@@ -818,6 +818,10 @@
 		FA6865261B33B43C00AD7703 /* HanziDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6865251B33B43C00AD7703 /* HanziDAO.m */; };
 		FA68652B1B33C60200AD7703 /* hanzi.pin in Resources */ = {isa = PBXBuildFile; fileRef = FA68652A1B33BF0B00AD7703 /* hanzi.pin */; };
 		FA68652E1B33ED2D00AD7703 /* HzDataInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA68652D1B33ED2D00AD7703 /* HzDataInfo.m */; };
+		FA6F5BE01B3B87BA00365158 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BDF1B3B87BA00365158 /* CardView.m */; };
+		FA6F5BE31B3B8A3600365158 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BE21B3B8A3600365158 /* UIColor+FlatColors.m */; };
+		FA6F5BE91B3B8BFC00365158 /* ZLPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BE61B3B8BFC00365158 /* ZLPanGestureRecognizer.m */; };
+		FA6F5BEA1B3B8BFC00365158 /* ZLSwipeableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BE81B3B8BFC00365158 /* ZLSwipeableView.m */; };
 		FA707E8E1B38E730003A0999 /* LCCoinHzView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA707E8D1B38E730003A0999 /* LCCoinHzView.xib */; };
 		FA76A1DE1B2E4B7D00B70973 /* MagicPenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA76A1DD1B2E4B7D00B70973 /* MagicPenTests.m */; };
 /* End PBXBuildFile section */
@@ -1671,6 +1675,14 @@
 		FA68652A1B33BF0B00AD7703 /* hanzi.pin */ = {isa = PBXFileReference; lastKnownFileType = file; name = hanzi.pin; path = ../../hanzi.pin; sourceTree = "<group>"; };
 		FA68652C1B33ED2D00AD7703 /* HzDataInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HzDataInfo.h; sourceTree = "<group>"; };
 		FA68652D1B33ED2D00AD7703 /* HzDataInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HzDataInfo.m; sourceTree = "<group>"; };
+		FA6F5BDE1B3B87BA00365158 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		FA6F5BDF1B3B87BA00365158 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		FA6F5BE11B3B8A3600365158 /* UIColor+FlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors.h"; sourceTree = "<group>"; };
+		FA6F5BE21B3B8A3600365158 /* UIColor+FlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColors.m"; sourceTree = "<group>"; };
+		FA6F5BE51B3B8BFC00365158 /* ZLPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPanGestureRecognizer.h; sourceTree = "<group>"; };
+		FA6F5BE61B3B8BFC00365158 /* ZLPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPanGestureRecognizer.m; sourceTree = "<group>"; };
+		FA6F5BE71B3B8BFC00365158 /* ZLSwipeableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSwipeableView.h; sourceTree = "<group>"; };
+		FA6F5BE81B3B8BFC00365158 /* ZLSwipeableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSwipeableView.m; sourceTree = "<group>"; };
 		FA707E8D1B38E730003A0999 /* LCCoinHzView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCCoinHzView.xib; sourceTree = "<group>"; };
 		FA76A1BE1B2E4B7C00B70973 /* MagicPen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicPen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA76A1D71B2E4B7D00B70973 /* MagicPenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicPenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1726,6 +1738,9 @@
 		FA0E73F11B38E97E0063C557 /* rbView */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F5BE41B3B8BFC00365158 /* ZLSwipeableView */,
+				FA6F5BDE1B3B87BA00365158 /* CardView.h */,
+				FA6F5BDF1B3B87BA00365158 /* CardView.m */,
 				FA0E73F81B38E9D40063C557 /* LCCoinHzView.h */,
 				FA0E73F91B38E9D40063C557 /* LCCoinHzView.m */,
 				FA0E73FB1B38EC9E0063C557 /* LCCoinWordView.h */,
@@ -2616,6 +2631,8 @@
 		FA68650F1B329C9200AD7703 /* rbModel */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F5BE11B3B8A3600365158 /* UIColor+FlatColors.h */,
+				FA6F5BE21B3B8A3600365158 /* UIColor+FlatColors.m */,
 				FA3B64911B37F01D00FED5B5 /* LCCourseModel.h */,
 				FA3B64921B37F01D00FED5B5 /* LCCourseModel.m */,
 				FA3B648E1B37EFA900FED5B5 /* LCBaseModel.h */,
@@ -2654,6 +2671,17 @@
 				FA3B64991B37F77800FED5B5 /* HzCharDAO.m */,
 			);
 			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		FA6F5BE41B3B8BFC00365158 /* ZLSwipeableView */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F5BE51B3B8BFC00365158 /* ZLPanGestureRecognizer.h */,
+				FA6F5BE61B3B8BFC00365158 /* ZLPanGestureRecognizer.m */,
+				FA6F5BE71B3B8BFC00365158 /* ZLSwipeableView.h */,
+				FA6F5BE81B3B8BFC00365158 /* ZLSwipeableView.m */,
+			);
+			path = ZLSwipeableView;
 			sourceTree = "<group>";
 		};
 		FA76A1B51B2E4B7C00B70973 = {
@@ -3642,6 +3670,7 @@
 				FA6865261B33B43C00AD7703 /* HanziDAO.m in Sources */,
 				FA6865161B329D2A00AD7703 /* LCMainVC.m in Sources */,
 				FA3B64811B37AB5900FED5B5 /* HzStroke.m in Sources */,
+				FA6F5BE01B3B87BA00365158 /* CardView.m in Sources */,
 				FA68651C1B32C69E00AD7703 /* LCCourseVC.m in Sources */,
 				FA3B64931B37F01D00FED5B5 /* LCCourseModel.m in Sources */,
 				FA0E73FD1B38EC9E0063C557 /* LCCoinWordView.m in Sources */,
@@ -3656,10 +3685,13 @@
 				FA6863561B324A0700AD7703 /* WorksController.m in Sources */,
 				FA3B64841B37ABD200FED5B5 /* Strokes.m in Sources */,
 				FA0E73F61B38E97E0063C557 /* LCCardView.m in Sources */,
+				FA6F5BE91B3B8BFC00365158 /* ZLPanGestureRecognizer.m in Sources */,
 				FA6861671B324A0600AD7703 /* MyWorks.m in Sources */,
 				FA6861631B324A0600AD7703 /* MyAlertView.m in Sources */,
 				FA685ED71B32495100AD7703 /* MainVC.m in Sources */,
+				FA6F5BE31B3B8A3600365158 /* UIColor+FlatColors.m in Sources */,
 				FA3B649A1B37F77800FED5B5 /* HzCharDAO.m in Sources */,
+				FA6F5BEA1B3B8BFC00365158 /* ZLSwipeableView.m in Sources */,
 				FA3B64901B37EFA900FED5B5 /* LCBaseModel.m in Sources */,
 				FA6861651B324A0600AD7703 /* MyCanvas.m in Sources */,
 			);
