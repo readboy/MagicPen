@@ -10,7 +10,6 @@
 #import "LCCoinHzView.h"
 #import "LCCoinWordView.h"
 #import "HanziDAO.h"
-
 #import "ZLSwipeableView.h"
 
 @interface LCMemoryVC : LearnChnieseBaseVC<ZLSwipeableViewDataSource,

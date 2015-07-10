@@ -13,14 +13,14 @@
           "height" : 1
         },
         "capInsets" : {
-          "bottom" : 795,
-          "top" : 4,
-          "right" : 810,
-          "left" : 469
+          "bottom" : 799,
+          "top" : 0,
+          "right" : 811,
+          "left" : 468
         }
       },
       "idiom" : "universal",
-      "filename" : "main_bk.png",
+      "filename" : "practice_bk.png",
       "scale" : "2x"
     },
     {

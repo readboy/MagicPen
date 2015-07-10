@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43704CA09CB95483A2F2E501 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 971FB36FA6EC3E0F7C12EA39 /* libPods.a */; };
-		FA0E73F61B38E97E0063C557 /* LCCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0E73F31B38E97E0063C557 /* LCCardView.m */; };
 		FA0E73F71B38E97E0063C557 /* LCCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0E73F51B38E97E0063C557 /* LCCourseCell.m */; };
-		FA0E73FA1B38E9D40063C557 /* LCCoinHzView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0E73F91B38E9D40063C557 /* LCCoinHzView.m */; };
 		FA0E73FD1B38EC9E0063C557 /* LCCoinWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0E73FC1B38EC9E0063C557 /* LCCoinWordView.m */; };
 		FA0E73FF1B38ECBE0063C557 /* LCCoinWordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0E73FE1B38ECBE0063C557 /* LCCoinWordView.xib */; };
 		FA0E74011B38EDAD0063C557 /* wordtest.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0E74001B38EDAD0063C557 /* wordtest.png */; };
@@ -24,7 +22,6 @@
 		FA3B64931B37F01D00FED5B5 /* LCCourseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3B64921B37F01D00FED5B5 /* LCCourseModel.m */; };
 		FA3B64971B37F53100FED5B5 /* HzCharText.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA3B64961B37F53100FED5B5 /* HzCharText.plist */; };
 		FA3B649A1B37F77800FED5B5 /* HzCharDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3B64991B37F77800FED5B5 /* HzCharDAO.m */; };
-		FA685D381B315FAD00AD7703 /* libSoundWaveComAir.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA685D371B315FAD00AD7703 /* libSoundWaveComAir.a */; };
 		FA685ED11B32495100AD7703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA685EC61B32495000AD7703 /* AppDelegate.m */; };
 		FA685ED21B32495100AD7703 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA685EC71B32495000AD7703 /* LaunchScreen.xib */; };
 		FA685ED31B32495100AD7703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA685EC91B32495000AD7703 /* Main.storyboard */; };
@@ -822,8 +819,20 @@
 		FA6F5BE31B3B8A3600365158 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BE21B3B8A3600365158 /* UIColor+FlatColors.m */; };
 		FA6F5BE91B3B8BFC00365158 /* ZLPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BE61B3B8BFC00365158 /* ZLPanGestureRecognizer.m */; };
 		FA6F5BEA1B3B8BFC00365158 /* ZLSwipeableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BE81B3B8BFC00365158 /* ZLSwipeableView.m */; };
-		FA707E8E1B38E730003A0999 /* LCCoinHzView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA707E8D1B38E730003A0999 /* LCCoinHzView.xib */; };
+		FA6F5BED1B3B913400365158 /* LCCoinHzView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6F5BEC1B3B913400365158 /* LCCoinHzView.xib */; };
+		FA6F5BF01B3B914500365158 /* LCCoinHzView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BEF1B3B914500365158 /* LCCoinHzView.m */; };
+		FA6F5BF31B3B99F400365158 /* LCMemoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BF21B3B99F400365158 /* LCMemoryModel.m */; };
+		FA6F5BF81B3BFA9F00365158 /* LCPacticeHzVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BF71B3BFA9F00365158 /* LCPacticeHzVC.m */; };
+		FA6F5BFB1B3BFAE100365158 /* LCPacticeWordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BFA1B3BFAE100365158 /* LCPacticeWordVC.m */; };
+		FA6F5BFE1B3BFB0300365158 /* LCPacticeSentenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5BFD1B3BFB0300365158 /* LCPacticeSentenceVC.m */; };
+		FA6F5C011B3C2D7E00365158 /* LCBubbleContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F5C001B3C2D7E00365158 /* LCBubbleContainerView.m */; };
+		FA71FADA1B3D2B1600E161E1 /* BubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA71FAD91B3D2B1600E161E1 /* BubbleView.m */; };
+		FA71FADC1B3D529500E161E1 /* BubbleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA71FADB1B3D529500E161E1 /* BubbleView.xib */; };
 		FA76A1DE1B2E4B7D00B70973 /* MagicPenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA76A1DD1B2E4B7D00B70973 /* MagicPenTests.m */; };
+		FAF72D771B4F4DE400081F95 /* libComAirLibrary_V1.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF72D701B4F4DE400081F95 /* libComAirLibrary_V1.1.1.a */; };
+		FAF72D781B4F4DE400081F95 /* n7.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAF72D711B4F4DE400081F95 /* n7.wav */; };
+		FAF72D791B4F4DE400081F95 /* n7.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAF72D731B4F4DE400081F95 /* n7.wav */; };
+		FAF72D7A1B4F4DE400081F95 /* SoundWaveComAir.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF72D761B4F4DE400081F95 /* SoundWaveComAir.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -839,12 +848,8 @@
 /* Begin PBXFileReference section */
 		006A026D49845AB0EF13940E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		971FB36FA6EC3E0F7C12EA39 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA0E73F21B38E97E0063C557 /* LCCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCardView.h; sourceTree = "<group>"; };
-		FA0E73F31B38E97E0063C557 /* LCCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCardView.m; sourceTree = "<group>"; };
 		FA0E73F41B38E97E0063C557 /* LCCourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCourseCell.h; sourceTree = "<group>"; };
 		FA0E73F51B38E97E0063C557 /* LCCourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCourseCell.m; sourceTree = "<group>"; };
-		FA0E73F81B38E9D40063C557 /* LCCoinHzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCoinHzView.h; sourceTree = "<group>"; };
-		FA0E73F91B38E9D40063C557 /* LCCoinHzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCoinHzView.m; sourceTree = "<group>"; };
 		FA0E73FB1B38EC9E0063C557 /* LCCoinWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCoinWordView.h; sourceTree = "<group>"; };
 		FA0E73FC1B38EC9E0063C557 /* LCCoinWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCoinWordView.m; sourceTree = "<group>"; };
 		FA0E73FE1B38ECBE0063C557 /* LCCoinWordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LCCoinWordView.xib; path = "巧学汉字/UISource/LCCoinWordView.xib"; sourceTree = SOURCE_ROOT; };
@@ -1677,18 +1682,40 @@
 		FA68652D1B33ED2D00AD7703 /* HzDataInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HzDataInfo.m; sourceTree = "<group>"; };
 		FA6F5BDE1B3B87BA00365158 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
 		FA6F5BDF1B3B87BA00365158 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
-		FA6F5BE11B3B8A3600365158 /* UIColor+FlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors.h"; sourceTree = "<group>"; };
-		FA6F5BE21B3B8A3600365158 /* UIColor+FlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColors.m"; sourceTree = "<group>"; };
+		FA6F5BE11B3B8A3600365158 /* UIColor+FlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+FlatColors.h"; path = "rbModel/UIColor+FlatColors.h"; sourceTree = "<group>"; };
+		FA6F5BE21B3B8A3600365158 /* UIColor+FlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FlatColors.m"; path = "rbModel/UIColor+FlatColors.m"; sourceTree = "<group>"; };
 		FA6F5BE51B3B8BFC00365158 /* ZLPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPanGestureRecognizer.h; sourceTree = "<group>"; };
 		FA6F5BE61B3B8BFC00365158 /* ZLPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPanGestureRecognizer.m; sourceTree = "<group>"; };
 		FA6F5BE71B3B8BFC00365158 /* ZLSwipeableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSwipeableView.h; sourceTree = "<group>"; };
 		FA6F5BE81B3B8BFC00365158 /* ZLSwipeableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSwipeableView.m; sourceTree = "<group>"; };
-		FA707E8D1B38E730003A0999 /* LCCoinHzView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCCoinHzView.xib; sourceTree = "<group>"; };
+		FA6F5BEC1B3B913400365158 /* LCCoinHzView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCCoinHzView.xib; sourceTree = "<group>"; };
+		FA6F5BEE1B3B914500365158 /* LCCoinHzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCoinHzView.h; sourceTree = "<group>"; };
+		FA6F5BEF1B3B914500365158 /* LCCoinHzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCoinHzView.m; sourceTree = "<group>"; };
+		FA6F5BF11B3B99F400365158 /* LCMemoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMemoryModel.h; sourceTree = "<group>"; };
+		FA6F5BF21B3B99F400365158 /* LCMemoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMemoryModel.m; sourceTree = "<group>"; };
+		FA6F5BF61B3BFA9F00365158 /* LCPacticeHzVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPacticeHzVC.h; sourceTree = "<group>"; };
+		FA6F5BF71B3BFA9F00365158 /* LCPacticeHzVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPacticeHzVC.m; sourceTree = "<group>"; };
+		FA6F5BF91B3BFAE100365158 /* LCPacticeWordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPacticeWordVC.h; sourceTree = "<group>"; };
+		FA6F5BFA1B3BFAE100365158 /* LCPacticeWordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPacticeWordVC.m; sourceTree = "<group>"; };
+		FA6F5BFC1B3BFB0300365158 /* LCPacticeSentenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPacticeSentenceVC.h; sourceTree = "<group>"; };
+		FA6F5BFD1B3BFB0300365158 /* LCPacticeSentenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPacticeSentenceVC.m; sourceTree = "<group>"; };
+		FA6F5BFF1B3C2D7E00365158 /* LCBubbleContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBubbleContainerView.h; sourceTree = "<group>"; };
+		FA6F5C001B3C2D7E00365158 /* LCBubbleContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBubbleContainerView.m; sourceTree = "<group>"; };
+		FA71FAD71B3CE7B500E161E1 /* MagicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicHeader.h; sourceTree = "<group>"; };
+		FA71FAD81B3D2B1600E161E1 /* BubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleView.h; sourceTree = "<group>"; };
+		FA71FAD91B3D2B1600E161E1 /* BubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleView.m; sourceTree = "<group>"; };
+		FA71FADB1B3D529500E161E1 /* BubbleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BubbleView.xib; sourceTree = "<group>"; };
 		FA76A1BE1B2E4B7C00B70973 /* MagicPen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicPen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA76A1D71B2E4B7D00B70973 /* MagicPenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicPenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA76A1DC1B2E4B7D00B70973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA76A1DD1B2E4B7D00B70973 /* MagicPenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicPenTests.m; sourceTree = "<group>"; };
 		FA8907E89EC61F5F0DBD1DDF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FAF72D6E1B4F4DE400081F95 /* ComAirAPI_V1.1.1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComAirAPI_V1.1.1.h; sourceTree = "<group>"; };
+		FAF72D701B4F4DE400081F95 /* libComAirLibrary_V1.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libComAirLibrary_V1.1.1.a; sourceTree = "<group>"; };
+		FAF72D711B4F4DE400081F95 /* n7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = n7.wav; sourceTree = "<group>"; };
+		FAF72D731B4F4DE400081F95 /* n7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = n7.wav; sourceTree = "<group>"; };
+		FAF72D751B4F4DE400081F95 /* SoundWaveComAir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundWaveComAir.h; sourceTree = "<group>"; };
+		FAF72D761B4F4DE400081F95 /* SoundWaveComAir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundWaveComAir.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1699,7 +1726,7 @@
 				FA3B648A1B37B01100FED5B5 /* CoreGraphics.framework in Frameworks */,
 				FA3B64881B37AFD700FED5B5 /* CoreFoundation.framework in Frameworks */,
 				FA3B64861B37AFC800FED5B5 /* AVFoundation.framework in Frameworks */,
-				FA685D381B315FAD00AD7703 /* libSoundWaveComAir.a in Frameworks */,
+				FAF72D771B4F4DE400081F95 /* libComAirLibrary_V1.1.1.a in Frameworks */,
 				43704CA09CB95483A2F2E501 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1738,15 +1765,17 @@
 		FA0E73F11B38E97E0063C557 /* rbView */ = {
 			isa = PBXGroup;
 			children = (
-				FA6F5BE41B3B8BFC00365158 /* ZLSwipeableView */,
+				FA71FAD81B3D2B1600E161E1 /* BubbleView.h */,
+				FA71FAD91B3D2B1600E161E1 /* BubbleView.m */,
+				FA6F5BFF1B3C2D7E00365158 /* LCBubbleContainerView.h */,
+				FA6F5C001B3C2D7E00365158 /* LCBubbleContainerView.m */,
+				FA6F5BE41B3B8BFC00365158 /* SwipeableView */,
 				FA6F5BDE1B3B87BA00365158 /* CardView.h */,
 				FA6F5BDF1B3B87BA00365158 /* CardView.m */,
-				FA0E73F81B38E9D40063C557 /* LCCoinHzView.h */,
-				FA0E73F91B38E9D40063C557 /* LCCoinHzView.m */,
 				FA0E73FB1B38EC9E0063C557 /* LCCoinWordView.h */,
 				FA0E73FC1B38EC9E0063C557 /* LCCoinWordView.m */,
-				FA0E73F21B38E97E0063C557 /* LCCardView.h */,
-				FA0E73F31B38E97E0063C557 /* LCCardView.m */,
+				FA6F5BEE1B3B914500365158 /* LCCoinHzView.h */,
+				FA6F5BEF1B3B914500365158 /* LCCoinHzView.m */,
 				FA0E73F41B38E97E0063C557 /* LCCourseCell.h */,
 				FA0E73F51B38E97E0063C557 /* LCCourseCell.m */,
 			);
@@ -2359,6 +2388,8 @@
 		FA68635C1B32505000AD7703 /* 巧学汉字 */ = {
 			isa = PBXGroup;
 			children = (
+				FAF72D6C1B4F4DE400081F95 /* SoundWaveComAir */,
+				FA6F5BEB1B3B90B800365158 /* 分类 */,
 				FA6865231B33B3F500AD7703 /* DataLayer */,
 				FA6865221B3396A600AD7703 /* UIResource */,
 				FA68650F1B329C9200AD7703 /* rbModel */,
@@ -2614,6 +2645,12 @@
 		FA68650E1B329C4200AD7703 /* rbViewC */ = {
 			isa = PBXGroup;
 			children = (
+				FA6F5BF61B3BFA9F00365158 /* LCPacticeHzVC.h */,
+				FA6F5BF71B3BFA9F00365158 /* LCPacticeHzVC.m */,
+				FA6F5BF91B3BFAE100365158 /* LCPacticeWordVC.h */,
+				FA6F5BFA1B3BFAE100365158 /* LCPacticeWordVC.m */,
+				FA6F5BFC1B3BFB0300365158 /* LCPacticeSentenceVC.h */,
+				FA6F5BFD1B3BFB0300365158 /* LCPacticeSentenceVC.m */,
 				FA3B648B1B37E45E00FED5B5 /* LCMemoryVC.h */,
 				FA3B648C1B37E45E00FED5B5 /* LCMemoryVC.m */,
 				FA68651A1B32C69E00AD7703 /* LCCourseVC.h */,
@@ -2631,8 +2668,8 @@
 		FA68650F1B329C9200AD7703 /* rbModel */ = {
 			isa = PBXGroup;
 			children = (
-				FA6F5BE11B3B8A3600365158 /* UIColor+FlatColors.h */,
-				FA6F5BE21B3B8A3600365158 /* UIColor+FlatColors.m */,
+				FA6F5BF11B3B99F400365158 /* LCMemoryModel.h */,
+				FA6F5BF21B3B99F400365158 /* LCMemoryModel.m */,
 				FA3B64911B37F01D00FED5B5 /* LCCourseModel.h */,
 				FA3B64921B37F01D00FED5B5 /* LCCourseModel.m */,
 				FA3B648E1B37EFA900FED5B5 /* LCBaseModel.h */,
@@ -2644,11 +2681,12 @@
 		FA6865221B3396A600AD7703 /* UIResource */ = {
 			isa = PBXGroup;
 			children = (
+				FA71FADB1B3D529500E161E1 /* BubbleView.xib */,
 				FA0E74001B38EDAD0063C557 /* wordtest.png */,
 				FA68651F1B33964E00AD7703 /* LCCourseCell.xib */,
 				FA6863601B32516300AD7703 /* LearnChinese.storyboard */,
-				FA707E8D1B38E730003A0999 /* LCCoinHzView.xib */,
 				FA0E73FE1B38ECBE0063C557 /* LCCoinWordView.xib */,
+				FA6F5BEC1B3B913400365158 /* LCCoinHzView.xib */,
 			);
 			name = UIResource;
 			path = UISource;
@@ -2673,7 +2711,7 @@
 			path = DataLayer;
 			sourceTree = "<group>";
 		};
-		FA6F5BE41B3B8BFC00365158 /* ZLSwipeableView */ = {
+		FA6F5BE41B3B8BFC00365158 /* SwipeableView */ = {
 			isa = PBXGroup;
 			children = (
 				FA6F5BE51B3B8BFC00365158 /* ZLPanGestureRecognizer.h */,
@@ -2681,7 +2719,17 @@
 				FA6F5BE71B3B8BFC00365158 /* ZLSwipeableView.h */,
 				FA6F5BE81B3B8BFC00365158 /* ZLSwipeableView.m */,
 			);
+			name = SwipeableView;
 			path = ZLSwipeableView;
+			sourceTree = "<group>";
+		};
+		FA6F5BEB1B3B90B800365158 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F5BE11B3B8A3600365158 /* UIColor+FlatColors.h */,
+				FA6F5BE21B3B8A3600365158 /* UIColor+FlatColors.m */,
+			);
+			name = "分类";
 			sourceTree = "<group>";
 		};
 		FA76A1B51B2E4B7C00B70973 = {
@@ -2710,6 +2758,7 @@
 		FA76A1C01B2E4B7C00B70973 /* 魔法笔 */ = {
 			isa = PBXGroup;
 			children = (
+				FA71FAD71B3CE7B500E161E1 /* MagicHeader.h */,
 				FA685EC51B32495000AD7703 /* AppDelegate.h */,
 				FA685EC61B32495000AD7703 /* AppDelegate.m */,
 				FA685ECB1B32495100AD7703 /* ImageMacros.h */,
@@ -2748,6 +2797,51 @@
 				FA76A1DC1B2E4B7D00B70973 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF72D6C1B4F4DE400081F95 /* SoundWaveComAir */ = {
+			isa = PBXGroup;
+			children = (
+				FAF72D6D1B4F4DE400081F95 /* Include */,
+				FAF72D6F1B4F4DE400081F95 /* Lib */,
+				FAF72D711B4F4DE400081F95 /* n7.wav */,
+				FAF72D721B4F4DE400081F95 /* Sound */,
+				FAF72D751B4F4DE400081F95 /* SoundWaveComAir.h */,
+				FAF72D761B4F4DE400081F95 /* SoundWaveComAir.m */,
+			);
+			path = SoundWaveComAir;
+			sourceTree = "<group>";
+		};
+		FAF72D6D1B4F4DE400081F95 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				FAF72D6E1B4F4DE400081F95 /* ComAirAPI_V1.1.1.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		FAF72D6F1B4F4DE400081F95 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				FAF72D701B4F4DE400081F95 /* libComAirLibrary_V1.1.1.a */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		FAF72D721B4F4DE400081F95 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				FAF72D731B4F4DE400081F95 /* n7.wav */,
+				FAF72D741B4F4DE400081F95 /* Number */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		FAF72D741B4F4DE400081F95 /* Number */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Number;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2904,6 +2998,7 @@
 				FA68625E1B324A0700AD7703 /* palette_item_19_16.png in Resources */,
 				FA6862691B324A0700AD7703 /* palette_item_20_01.png in Resources */,
 				FA68643E1B3297FE00AD7703 /* age6_01.png in Resources */,
+				FAF72D791B4F4DE400081F95 /* n7.wav in Resources */,
 				FA6864C61B3297FE00AD7703 /* read_3.png in Resources */,
 				FA6862141B324A0600AD7703 /* palette_item_12_05.png in Resources */,
 				FA68619F1B324A0600AD7703 /* palette_item_02_08.png in Resources */,
@@ -3004,10 +3099,10 @@
 				FA68633F1B324A0700AD7703 /* welcome_titile37.png in Resources */,
 				FA6861D21B324A0600AD7703 /* palette_item_06_04.png in Resources */,
 				FA68645E1B3297FE00AD7703 /* boy_n_11.png in Resources */,
-				FA707E8E1B38E730003A0999 /* LCCoinHzView.xib in Resources */,
 				FA6864621B3297FE00AD7703 /* boy_n_15.png in Resources */,
 				FA6862021B324A0600AD7703 /* palette_item_10_07.png in Resources */,
 				FA6862FA1B324A0700AD7703 /* welcome_pigment31.png in Resources */,
+				FA6F5BED1B3B913400365158 /* LCCoinHzView.xib in Resources */,
 				FA6861B31B324A0600AD7703 /* palette_item_03_18.png in Resources */,
 				FA6864801B3297FE00AD7703 /* btn_close_01.png in Resources */,
 				FA6864991B3297FE00AD7703 /* hulu_normal_6.png in Resources */,
@@ -3157,6 +3252,7 @@
 				FA6864BA1B3297FE00AD7703 /* practice_2.png in Resources */,
 				FA6862971B324A0700AD7703 /* welcome_angel06.png in Resources */,
 				FA6864D11B3297FE00AD7703 /* sentence_case_1.png in Resources */,
+				FA71FADC1B3D529500E161E1 /* BubbleView.xib in Resources */,
 				FA68621E1B324A0600AD7703 /* palette_item_13_05.png in Resources */,
 				FA6864F21B3297FE00AD7703 /* snail_click_25.png in Resources */,
 				FA6862E81B324A0700AD7703 /* welcome_pigment13.png in Resources */,
@@ -3378,6 +3474,7 @@
 				FA6864811B3297FE00AD7703 /* btn_close_02.png in Resources */,
 				FA6864CA1B3297FE00AD7703 /* read_case.png in Resources */,
 				FA6862EE1B324A0700AD7703 /* welcome_pigment19.png in Resources */,
+				FAF72D781B4F4DE400081F95 /* n7.wav in Resources */,
 				FA6861F51B324A0600AD7703 /* palette_item_09_14.png in Resources */,
 				FA0E73FF1B38ECBE0063C557 /* LCCoinWordView.xib in Resources */,
 				FA6861BF1B324A0600AD7703 /* palette_item_04_09.png in Resources */,
@@ -3667,24 +3764,29 @@
 				FA6865191B32BAAA00AD7703 /* PresentController.m in Sources */,
 				FA685ED61B32495100AD7703 /* main.m in Sources */,
 				FA6861661B324A0600AD7703 /* MyScrollView.m in Sources */,
+				FAF72D7A1B4F4DE400081F95 /* SoundWaveComAir.m in Sources */,
+				FA6F5BFE1B3BFB0300365158 /* LCPacticeSentenceVC.m in Sources */,
+				FA6F5BF31B3B99F400365158 /* LCMemoryModel.m in Sources */,
 				FA6865261B33B43C00AD7703 /* HanziDAO.m in Sources */,
 				FA6865161B329D2A00AD7703 /* LCMainVC.m in Sources */,
 				FA3B64811B37AB5900FED5B5 /* HzStroke.m in Sources */,
 				FA6F5BE01B3B87BA00365158 /* CardView.m in Sources */,
 				FA68651C1B32C69E00AD7703 /* LCCourseVC.m in Sources */,
+				FA6F5BFB1B3BFAE100365158 /* LCPacticeWordVC.m in Sources */,
+				FA6F5BF81B3BFA9F00365158 /* LCPacticeHzVC.m in Sources */,
 				FA3B64931B37F01D00FED5B5 /* LCCourseModel.m in Sources */,
+				FA6F5C011B3C2D7E00365158 /* LCBubbleContainerView.m in Sources */,
 				FA0E73FD1B38EC9E0063C557 /* LCCoinWordView.m in Sources */,
 				FA6861561B324A0600AD7703 /* DrawingController.m in Sources */,
 				FA0E73F71B38E97E0063C557 /* LCCourseCell.m in Sources */,
 				FA685ED11B32495100AD7703 /* AppDelegate.m in Sources */,
-				FA0E73FA1B38E9D40063C557 /* LCCoinHzView.m in Sources */,
 				FA6862911B324A0700AD7703 /* ViewController.m in Sources */,
 				FA6865131B329CD100AD7703 /* LearnChnieseBaseVC.m in Sources */,
 				FA68652E1B33ED2D00AD7703 /* HzDataInfo.m in Sources */,
 				FA3B648D1B37E45E00FED5B5 /* LCMemoryVC.m in Sources */,
+				FA71FADA1B3D2B1600E161E1 /* BubbleView.m in Sources */,
 				FA6863561B324A0700AD7703 /* WorksController.m in Sources */,
 				FA3B64841B37ABD200FED5B5 /* Strokes.m in Sources */,
-				FA0E73F61B38E97E0063C557 /* LCCardView.m in Sources */,
 				FA6F5BE91B3B8BFC00365158 /* ZLPanGestureRecognizer.m in Sources */,
 				FA6861671B324A0600AD7703 /* MyWorks.m in Sources */,
 				FA6861631B324A0600AD7703 /* MyAlertView.m in Sources */,
@@ -3694,6 +3796,7 @@
 				FA6F5BEA1B3B8BFC00365158 /* ZLSwipeableView.m in Sources */,
 				FA3B64901B37EFA900FED5B5 /* LCBaseModel.m in Sources */,
 				FA6861651B324A0600AD7703 /* MyCanvas.m in Sources */,
+				FA6F5BF01B3B914500365158 /* LCCoinHzView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3831,6 +3934,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA8907E89EC61F5F0DBD1DDF /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/MagicPen/LearnChinese/Info.plist";
@@ -3842,14 +3946,17 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MagicPen-hdpnfddigokjwafdjhzzmdlmcsqf/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)/SoundWaveComAir/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/FunDraw/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/巧学汉字/SoundWaveComAir/Lib",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
+					"-l\"Pods-CocoaLumberjack\"",
 					"-l\"Pods-SVProgressHUD\"",
 					"-framework",
 					"\"QuartzCore\"",
 					"-lstdc++",
 				);
+				OTHER_LIBTOOLFLAGS = "$(OTHER_LDFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
@@ -3861,6 +3968,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 006A026D49845AB0EF13940E /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/MagicPen/LearnChinese/Info.plist";
@@ -3872,14 +3980,17 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MagicPen-hdpnfddigokjwafdjhzzmdlmcsqf/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)/SoundWaveComAir/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/FunDraw/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/巧学汉字/SoundWaveComAir/Lib",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
+					"-l\"Pods-CocoaLumberjack\"",
 					"-l\"Pods-SVProgressHUD\"",
 					"-framework",
 					"\"QuartzCore\"",
 					"-lstdc++",
 				);
+				OTHER_LIBTOOLFLAGS = "$(OTHER_LDFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";

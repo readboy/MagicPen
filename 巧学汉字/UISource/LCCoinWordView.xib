@@ -20,7 +20,7 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="yCE-i2-P2b" secondAttribute="height" multiplier="30:13" id="Dku-NU-uZe"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                     <color key="textColor" red="0.80736019736842102" green="0.38463712993421051" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import  "MagicHeader.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
