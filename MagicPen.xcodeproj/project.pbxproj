@@ -833,6 +833,7 @@
 		FAF72D781B4F4DE400081F95 /* n7.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAF72D711B4F4DE400081F95 /* n7.wav */; };
 		FAF72D791B4F4DE400081F95 /* n7.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAF72D731B4F4DE400081F95 /* n7.wav */; };
 		FAF72D7A1B4F4DE400081F95 /* SoundWaveComAir.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF72D761B4F4DE400081F95 /* SoundWaveComAir.m */; };
+		FAF72D7C1B4F533600081F95 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAF72D7B1B4F533600081F95 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1716,6 +1717,7 @@
 		FAF72D731B4F4DE400081F95 /* n7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = n7.wav; sourceTree = "<group>"; };
 		FAF72D751B4F4DE400081F95 /* SoundWaveComAir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundWaveComAir.h; sourceTree = "<group>"; };
 		FAF72D761B4F4DE400081F95 /* SoundWaveComAir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundWaveComAir.m; sourceTree = "<group>"; };
+		FAF72D7B1B4F533600081F95 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2758,6 +2760,7 @@
 		FA76A1C01B2E4B7C00B70973 /* 魔法笔 */ = {
 			isa = PBXGroup;
 			children = (
+				FAF72D7B1B4F533600081F95 /* Podfile */,
 				FA71FAD71B3CE7B500E161E1 /* MagicHeader.h */,
 				FA685EC51B32495000AD7703 /* AppDelegate.h */,
 				FA685EC61B32495000AD7703 /* AppDelegate.m */,
@@ -3672,6 +3675,7 @@
 				FA68623B1B324A0600AD7703 /* palette_item_16_01.png in Resources */,
 				FA6862311B324A0600AD7703 /* palette_item_13_24.png in Resources */,
 				FA68617F1B324A0600AD7703 /* palette_color08.png in Resources */,
+				FAF72D7C1B4F533600081F95 /* Podfile in Resources */,
 				FA6861C11B324A0600AD7703 /* palette_item_04_11.png in Resources */,
 				FA6861B71B324A0600AD7703 /* palette_item_04_01.png in Resources */,
 				FA6864461B3297FE00AD7703 /* bird_1.png in Resources */,
